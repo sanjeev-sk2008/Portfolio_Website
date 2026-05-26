@@ -106,7 +106,6 @@
   width: 100%;
 }
 
-/* ===== PROJECTS SECTION ===== */
 .projects {
     background-color: black;
     padding: 80px 60px;
@@ -132,7 +131,6 @@
     justify-content: center;
 }
 
-/* Base card */
 .project-card {
     position: relative;
     width: 220px;
@@ -147,7 +145,6 @@
     z-index: 1;
 }
 
-/* Expanded card on hover */
 .project-card:hover {
     width: 400px;
     height: 420px;
@@ -157,13 +154,11 @@
         0 0 40px rgba(127, 255, 0, 0.3);
 }
 
-/* Blurred backdrop using a pseudo-element overlay on the grid */
 .projects-grid:has(.project-card:hover) .project-card:not(:hover) {
     filter: blur(2px);
     opacity: 0.5;
 }
 
-/* Project image */
 .project-card .card-img {
     width: 100%;
     height: 65%;
@@ -177,7 +172,6 @@
     height: 55%;
 }
 
-/* Description area */
 .project-card .card-info {
     padding: 10px 14px;
     background-color: #0a0a0a;
@@ -205,7 +199,6 @@
     color: rgb(180, 180, 180);
     margin: 0;
     line-height: 1.5;
-    /* Show only 2 lines by default */
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -218,7 +211,6 @@
     overflow: visible;
 }
 
-/* ===== WIP CARD ===== */
 .project-card.wip {
     border-color: aqua;
     border-style: dashed;
@@ -265,4 +257,110 @@
 .project-card.wip .card-desc {
     color: aqua;
     font-style: italic;
+}
+
+.contact {
+    background-color: black;
+    padding: 80px 60px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid rgba(127, 255, 0, 0.15);
+}
+
+.contact-heading {
+    color: chartreuse;
+    font-family: 'Courier New', monospace;
+    font-size: 28px;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+    text-shadow:
+        0 0 5px rgb(127, 255, 0),
+        0 0 10px rgb(127, 255, 0),
+        0 0 20px rgb(127, 255, 0);
+}
+
+.contact-subtext {
+    color: rgb(120, 120, 120);
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 55px;
+    text-align: center;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 280px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 22px 26px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background-color: #0d0d0d;
+    text-decoration: none;
+    transition: border-color 0.25s, background-color 0.25s, transform 0.25s;
+}
+
+.contact-card:hover {
+    background-color: #131313;
+    transform: translateY(-3px);
+}
+
+
+.contact-card.email:hover   { border-color: chartreuse; }
+.contact-card.phone:hover   { border-color: chartreuse; }
+.contact-card.github:hover  { border-color: white; }
+.contact-card.linkedin:hover { border-color: #0a66c2; }
+
+.contact-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 20px;
+}
+
+.email   .contact-icon { background-color: rgba(127, 255, 0, 0.1);  color: chartreuse; }
+.phone   .contact-icon { background-color: rgba(127, 255, 0, 0.1);  color: chartreuse; }
+.github  .contact-icon { background-color: rgba(255, 255, 255, 0.07); color: white; }
+.linkedin .contact-icon { background-color: rgba(10, 102, 194, 0.15); color: #0a66c2; }
+
+.contact-label {
+    font-family: 'Courier New', monospace;
+    font-size: 11px;
+    color: rgb(100, 100, 100);
+    margin: 0 0 3px 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.contact-value {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: rgb(210, 210, 210);
+    margin: 0;
+    word-break: break-all;
+}
+
+.contact-card.email:hover   .contact-value { color: chartreuse; }
+.contact-card.phone:hover   .contact-value { color: chartreuse; }
+.contact-card.github:hover  .contact-value { color: white; }
+.contact-card.linkedin:hover .contact-value { color: #4d9de0; }
+
+.contact-footer {
+    margin-top: 55px;
+    color: rgb(60, 60, 60);
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    letter-spacing: 1px;
 }

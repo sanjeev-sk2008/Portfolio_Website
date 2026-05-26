@@ -90,10 +90,60 @@
         </div>
     </div>
 
-    <div class="contact">
+    <div class="contact" id="contact">
+
+        <p class="contact-heading">~/contact $</p>
+        <p class="contact-subtext">Open to collabs, internships, or just a good conversation.</p>
+
+        <div class="contact-grid">
+
+            <a class="contact-card email" href="mailto:sanjeev193ujs@gmail.com">
+                <div class="contact-icon">✉</div>
+                <div>
+                    <p class="contact-label">Email</p>
+                    <p class="contact-value">sanjeev193ujs@gmail.com</p>
+                </div>
+            </a>
+
+            <a class="contact-card phone" href="tel:+916238202531">
+                <div class="contact-icon">✆</div>
+                <div>
+                    <p class="contact-label">Phone</p>
+                    <p class="contact-value">+91 62382 02531</p>
+                </div>
+            </a>
+
+            <a class="contact-card github" href="https://github.com/sanjeev-sk2008" target="_blank" rel="noopener">
+                <div class="contact-icon">⌥</div>
+                <div>
+                    <p class="contact-label">GitHub</p>
+                    <p class="contact-value">sanjeev-sk2008</p>
+                </div>
+            </a>
+
+            <a class="contact-card linkedin" href="https://www.linkedin.com/in/sanjeev-sharath-kumar-8b578440b/"
+                target="_blank" rel="noopener">
+                <div class="contact-icon">in</div>
+                <div>
+                    <p class="contact-label">LinkedIn</p>
+                    <p class="contact-value">sanjeev-sharath-kumar</p>
+                </div>
+            </a>
+
+        </div>
+
+        <p class="contact-footer">// Made with pure dedication</p>
 
     </div>
 
+    <script>
+        document.querySelector('.landing_Page1').addEventListener('click', function () {
+            document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+        });
+        document.querySelector('.landing_Page2').addEventListener('click', function () {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
 </body>
 
 </html>
