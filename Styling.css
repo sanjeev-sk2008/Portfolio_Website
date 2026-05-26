@@ -1,0 +1,107 @@
+.whoami {
+    color: chartreuse;
+    margin-left: 0px;
+    margin-top: 50px;
+}
+
+.landing_Page1 {
+    background-color: transparent;
+    color: chartreuse;
+    margin-left: 200px;
+    margin-top: 0px;
+    height: 70px;
+    width: 170px;
+    border-radius: 6px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: border-color 0.2s;
+    font-weight: bold;
+}
+
+.landing_Page2 {
+    background-color: transparent;
+    color: aqua;
+    margin-left: 200px;
+    margin-top: 25px;
+    height: 70px;
+    width: 170px;
+    border-radius: 6px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: border-color 0.2s;
+    font-weight: bold;
+}
+
+.landing_Page1:hover {
+    border-color: rgb(127, 255, 0);
+    border-width: 3px;
+    border-style: solid;
+    background-color: rgb(51, 50, 50);
+}
+
+.landing_Page2:hover {
+    border-color: aqua;
+    border-width: 3px;
+    border-style: solid;
+    background-color: rgb(51, 50, 50);
+}
+
+.LPT1 {
+    font-family: Arial;
+    font-weight: bold;
+    margin-left: 100px;
+    font-size: 35px;
+    color: white;
+    margin-bottom: 0px;
+    line-height: 41px;
+}
+
+.LPT2 {
+    font-family: Arial;
+    font-weight: bold;
+    margin-left: 100px;
+    font-size: 35px;
+    color: rgb(127, 255, 0);
+    text-shadow: rgb(127, 255, 0);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 15px;
+    text-shadow:     0 0 5px rgb(127, 255, 0),
+    0 0 10px rgb(127, 255, 0),
+    0 0 20px rgb(127, 255, 0),
+    0 0 40px rgb(127, 255, 0),
+    0 0 80px rgb(127, 255, 0),
+    0 0 120px rgb(127, 255, 0);
+}
+
+.LPT3 {
+    color: rgb(0, 255, 255);
+    font-family: Arial;
+    margin-left: 150px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 21px;
+    text-shadow:     0 0 5px rgb(0, 255, 255),
+    0 0 10px rgb(0, 255, 255),
+    0 0 20px rgb(0, 255, 255),
+    0 0 40px rgb(0, 255, 255),
+    0 0 80px rgb(0, 255, 255),
+    0 0 120px rgb(0, 255, 255);
+}
+
+.LPT4 {
+    color: rgb(104, 103, 103);
+    font-family: Arial;
+    font-size: 18px;
+    font-style: italic;
+    margin-left: 150px;
+}
+
+.bg1 {
+  background-image: url("images/backimg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;  
+  height: 700px;
+  width: 100%;
+}
