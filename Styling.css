@@ -57,24 +57,24 @@
     color: rgb(127, 255, 0);
     text-shadow: rgb(127, 255, 0);
     line-height: normal;
-    text-shadow:     0 0 5px rgb(127, 255, 0),
-    0 0 10px rgb(127, 255, 0),
-    0 0 20px rgb(127, 255, 0),
-    0 0 40px rgb(127, 255, 0),
-    0 0 80px rgb(127, 255, 0),
-    0 0 120px rgb(127, 255, 0);
+    text-shadow: 0 0 5px rgb(127, 255, 0),
+        0 0 10px rgb(127, 255, 0),
+        0 0 20px rgb(127, 255, 0),
+        0 0 40px rgb(127, 255, 0),
+        0 0 80px rgb(127, 255, 0),
+        0 0 120px rgb(127, 255, 0);
 }
 
 .LPT3 {
     color: rgb(0, 255, 255);
     font-family: Arial;
     font-size: 21px;
-    text-shadow:     0 0 5px rgb(0, 255, 255),
-    0 0 10px rgb(0, 255, 255),
-    0 0 20px rgb(0, 255, 255),
-    0 0 40px rgb(0, 255, 255),
-    0 0 80px rgb(0, 255, 255),
-    0 0 120px rgb(0, 255, 255);
+    text-shadow: 0 0 5px rgb(0, 255, 255),
+        0 0 10px rgb(0, 255, 255),
+        0 0 20px rgb(0, 255, 255),
+        0 0 40px rgb(0, 255, 255),
+        0 0 80px rgb(0, 255, 255),
+        0 0 120px rgb(0, 255, 255);
 }
 
 .LPT4 {
@@ -84,9 +84,7 @@
     font-style: italic;
 }
 
-.bg1 {
-
-}
+.bg1 {}
 
 
 .projects {
@@ -298,10 +296,21 @@
 }
 
 
-.contact-card.email:hover   { border-color: chartreuse; }
-.contact-card.phone:hover   { border-color: chartreuse; }
-.contact-card.github:hover  { border-color: white; }
-.contact-card.linkedin:hover { border-color: #0a66c2; }
+.contact-card.email:hover {
+    border-color: chartreuse;
+}
+
+.contact-card.phone:hover {
+    border-color: chartreuse;
+}
+
+.contact-card.github:hover {
+    border-color: white;
+}
+
+.contact-card.linkedin:hover {
+    border-color: #0a66c2;
+}
 
 .contact-icon {
     width: 42px;
@@ -314,10 +323,25 @@
     font-size: 20px;
 }
 
-.email   .contact-icon { background-color: rgba(127, 255, 0, 0.1);  color: chartreuse; }
-.phone   .contact-icon { background-color: rgba(127, 255, 0, 0.1);  color: chartreuse; }
-.github  .contact-icon { background-color: rgba(255, 255, 255, 0.07); color: white; }
-.linkedin .contact-icon { background-color: rgba(10, 102, 194, 0.15); color: #0a66c2; }
+.email .contact-icon {
+    background-color: rgba(127, 255, 0, 0.1);
+    color: chartreuse;
+}
+
+.phone .contact-icon {
+    background-color: rgba(127, 255, 0, 0.1);
+    color: chartreuse;
+}
+
+.github .contact-icon {
+    background-color: rgba(255, 255, 255, 0.07);
+    color: white;
+}
+
+.linkedin .contact-icon {
+    background-color: rgba(10, 102, 194, 0.15);
+    color: #0a66c2;
+}
 
 .contact-label {
     font-family: 'Courier New', monospace;
@@ -336,10 +360,21 @@
     word-break: break-all;
 }
 
-.contact-card.email:hover   .contact-value { color: chartreuse; }
-.contact-card.phone:hover   .contact-value { color: chartreuse; }
-.contact-card.github:hover  .contact-value { color: white; }
-.contact-card.linkedin:hover .contact-value { color: #4d9de0; }
+.contact-card.email:hover .contact-value {
+    color: chartreuse;
+}
+
+.contact-card.phone:hover .contact-value {
+    color: chartreuse;
+}
+
+.contact-card.github:hover .contact-value {
+    color: white;
+}
+
+.contact-card.linkedin:hover .contact-value {
+    color: #4d9de0;
+}
 
 .contact-footer {
     margin-top: 55px;
@@ -347,4 +382,66 @@
     font-family: 'Courier New', monospace;
     font-size: 13px;
     letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+
+    /* Landing */
+    .bg1 {
+        height: auto;
+        padding: 80px 20px;
+    }
+
+    .LPT1 {
+        font-size: 26px;
+    }
+
+    .LPT2 {
+        font-size: 26px;
+    }
+
+    .LPT3 {
+        font-size: 16px;
+    }
+
+    .LPT4 {
+        font-size: 15px;
+    }
+
+    .landing_Page1,
+    .landing_Page2 {
+        width: 80%;
+        height: 55px;
+        font-size: 15px;
+    }
+
+    /* Projects */
+    .projects {
+        padding: 60px 20px;
+    }
+
+    .project-card {
+        width: 80vw;
+        height: 260px;
+    }
+
+    .project-card:hover {
+        width: 80vw;
+        height: 420px;
+    }
+
+    /* Contact */
+    .contact {
+        padding: 60px 20px 80px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .contact-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
 }
